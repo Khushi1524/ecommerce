@@ -258,4 +258,94 @@ body::-webkit-scrollbar {
 .feature .container #color-table,
 .feature .container .first {
   background: #f5f5f5;
+}
+
+.feature-product {
+  background: #eeeeee;
+}
+.feature-product .container {
+  padding: 30px 30px;
+}
+.feature-product .container .top-row {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-left: 100px;
+}
+.feature-product .container .top-row .menus button {
+  padding: 10px 18px;
+  border: none;
+  background: #ffffff;
+  color: #616161;
+  border-radius: 4px;
+}
+.feature-product .container .products .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.feature-product .container .products .row .card .container .firstbx {
+  position: relative;
+}
+.feature-product .container .products .row .card .container .firstbx .imgbx {
+  background: #f5f5f5;
+  width: 230px;
+  height: auto;
+}
+.feature-product .container .products .row .card .container .firstbx .imgbx img {
+  width: 100%;
+}
+.feature-product .container .products .row .card .container .firstbx .imgbx .new {
+  background: #212121;
+  color: #ffffff;
+}
+.feature-product .container .products .row .card .container .firstbx .cartbx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  gap: 5px;
+  position: absolute;
+  bottom: 5px;
+}
+.feature-product .container .products .row .card .container .firstbx .cartbx h3 {
+  font-size: 12px;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.feature-product .container .products .row .card .container .firstbx .cartbx i {
+  font-size: 12px;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+}
+.feature-product .container .products .row .card .container .contentbx {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #ffffff;
+  width: 230px;
+  padding: 10px;
+}
+.feature-product .container .products .row .card .container .contentbx .txt {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-product .container .products .row .card .container .contentbx .txt #percent {
+  background: #212121;
+  padding: 2px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.feature-product .container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-product .container .btn button {
+  padding: 10px 20px;
 }/*# sourceMappingURL=Style.css.map */
