@@ -69,71 +69,70 @@ for (let i = 0; i < Images.length; i++) {
 
 
 const bestSellerRow = document.querySelector(".bestSellerRow");
-const bestSellerColumn = 
 
-         `  <div class="bestSellerColumn">
+for (let i = 1; i <= 3; i++) {
+  let headerText = "Best Seller"; 
+  if (i === 2) headerText = "New Arrival";
+  else if (i === 3) headerText = "Featured";
 
-                <div class="top-row">
-                    <p>Best Seller</p>
-                    <div class="pre-next">
-                        <p id="back"><i class="fas fa-chevron-left arrow"></i>Back</p>
-                        <p>Next<i class="fas fa-chevron-right arrow"></i></p>
+  const bestSellerColumn = `
+        <div class="bestSellerColumn">
+            <div class="top-row">
+                <p>${headerText}</p>
+                <div class="pre-next">
+                    <p id="back"><i class="fas fa-chevron-left arrow"></i>Back</p>
+                    <p>Next<i class="fas fa-chevron-right arrow"></i></p>
+                </div>
+            </div>
+            
+            <div class="card-bx">
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="assets/Picture-1.png" alt="">
+                    </div>
+                    <div class="contentbx">
+                        <h4>Petite Table Lamp</h4>
+                        <p>$19.00 $21.00</p>
+
+                        <div class="btn">
+                            <button>Add to Cart</button>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="card-bx">
-                    <div class="card">
-                        <div class="imgbx">
-                            <img src="assets/Picture-1.png" alt="">
-                        </div>
-                        <div class="contentbx">
-                            <h4>Petite Table Lamp</h4>
-                            <p>$19.00 $21.00</p>
-    
-                            <div class="btn">
-                                <button>Add to Cart</button>
-                            </div>
+            </div>
+
+            <div class="card-bx">
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="assets/Picture-1.png" alt="">
+                    </div>
+                    <div class="contentbx">
+                        <h4>Petite Table Lamp</h4>
+                        <p>$19.00 $21.00</p>
+
+                        <div class="btn">
+                            <button>Add to Cart</button>
                         </div>
                     </div>
-    
                 </div>
+            </div>
 
-                <div class="card-bx">
-                    <div class="card">
-                        <div class="imgbx">
-                            <img src="assets/Picture-1.png" alt="">
-                        </div>
-                        <div class="contentbx">
-                            <h4>Petite Table Lamp</h4>
-                            <p>$19.00 $21.00</p>
-    
-                            <div class="btn">
-                                <button>Add to Cart</button>
-                            </div>
+            <div class="card-bx">
+                <div class="card">
+                    <div class="imgbx">
+                        <img src="assets/Picture-1.png" alt="">
+                    </div>
+                    <div class="contentbx">
+                        <h4>Petite Table Lamp</h4>
+                        <p>$19.00 $21.00</p>
+
+                        <div class="btn">
+                            <button>Add to Cart</button>
                         </div>
                     </div>
-    
                 </div>
-
-                <div class="card-bx">
-                    <div class="card">
-                        <div class="imgbx">
-                            <img src="assets/Picture-1.png" alt="">
-                        </div>
-                        <div class="contentbx">
-                            <h4>Petite Table Lamp</h4>
-                            <p>$19.00 $21.00</p>
-    
-                            <div class="btn">
-                                <button>Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-      
-            </div>`;
-
-for (let i = 0; i < 3; i++) {
-    bestSellerRow.innerHTML += bestSellerColumn;
+            </div>
+        </div>`;
+  bestSellerRow.innerHTML += bestSellerColumn;
 }
+
