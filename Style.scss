@@ -600,13 +600,19 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: end;
 
+  .left{
+    width: 2vw;
+    height: 350px;
+    background: #eeeeee;
+  }
+
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     background: white;
-    width: 100%;
+    width: 98vw;
     height: 350px;
 
     .contentbx {
@@ -815,9 +821,9 @@ body::-webkit-scrollbar {
 }
 
 .discount-banner {
-  width: 102vw;
+  // width: 102vw;
   display: flex;
-  margin-left: -2vw;
+  // margin-left: -2vw;
 
   .left {
     width: 2vw;
@@ -906,6 +912,7 @@ body::-webkit-scrollbar {
 .offer {
   display: flex;
   flex-direction: row;
+  
 
   .left {
     width: 6vw;
@@ -1073,20 +1080,21 @@ body::-webkit-scrollbar {
 
 .blog {
   display: flex;
+  max-height: 105vh;
 
   .left {
     width: 6vw;
-    height: 80vh;
     background: #ffffff;
   }
 
   .blog-container {
+    width: 94vw;
     background: #eeeeee;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 94vw;
+    
 
     .blogs {
       display: flex;
@@ -1102,15 +1110,17 @@ body::-webkit-scrollbar {
 
         h3 {
           color: #424242;
-          font-size: 35px;
+          font-size: 30px;
           font-weight: 700;
           font-family: "Playfair Display", sans-serif;
+          padding: 15px 0px;
         }
 
         p {
           color: #212121;
-          font-size: 14px;
+          font-size: 12px;
           font-weight: 400;
+          margin-bottom: 15px;
         }
       }
       .cardbx {
@@ -1123,7 +1133,7 @@ body::-webkit-scrollbar {
           background: #ffffff;
 
           .imgbx {
-            width: 300px;
+            width: 320px;
 
             img {
               width: 100%;
@@ -1133,8 +1143,9 @@ body::-webkit-scrollbar {
         }
 
         .blog-content {
-          max-width: 300px;
-          padding: 15px;
+          max-width: 320px;
+          padding:5px 15px;
+          line-height: 1.5;
 
           h4 {
             color: #424242;
@@ -1143,9 +1154,81 @@ body::-webkit-scrollbar {
           }
 
           p {
+            padding:5px 0px;
+            color: #616161;
+            font-weight: 400;
+            font-size: 12px;
+          }
+
+          #blog-p{
+            color:#212121;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+
+        .blog-end{
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+       
+
+          .line{
+            width: 40px;
+            height: 1px;
+            background: #616161;
+          }
+
+          p{
+            color: #616161;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 10px 10px;
           }
         }
       }
+    }
+  }
+}
+
+.special-offer{
+  background: #ffffff;
+  padding: 100px 50px;
+
+  .specialOffer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+    .card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      .imgbx{
+        width: 50px;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      h4{
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      p{
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
     }
   }
 }
