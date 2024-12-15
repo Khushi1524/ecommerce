@@ -52,6 +52,9 @@
   background: #ffffff;
   padding: 20px 190px;
 }
+#hero-section .navbar .menu-btn {
+  display: none;
+}
 #hero-section .navbar .logo a {
   font-size: 20px;
   color: #212121;
@@ -264,6 +267,9 @@
 }
 
 @media (max-width: 480px) {
+  #hero-section {
+    overflow-x: hidden;
+  }
   #hero-section .top-bar {
     align-items: start;
     justify-content: start;
@@ -279,6 +285,9 @@
   #hero-section .navbar {
     padding: 20px 10px;
   }
+  #hero-section .navbar .menu-btn {
+    display: block;
+  }
   #hero-section .navbar .logo a {
     font-size: 17px;
   }
@@ -287,8 +296,8 @@
     top: 0;
     left: 0;
     z-index: 20;
-    width: 100%;
-    height: 100vh;
+    width: 70%;
+    height: 120vh;
     background: white;
     display: none;
   }
@@ -307,7 +316,7 @@
     border-bottom: 1px solid black;
   }
   #hero-section .navbar .menus ul li a {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
   }
   #hero-section .navbar .menus ul li#menu-btn2 {
@@ -366,6 +375,7 @@
   #hero-section .banner .container .imgbx {
     width: 300px;
     margin-left: 50px;
+    background: grey;
   }
   #hero-section .banner .container .slider {
     bottom: 0px;
@@ -499,6 +509,11 @@
   #feature {
     height: auto;
   }
+  #feature .left-row {
+    width: 6vw;
+    height: 180vh;
+    max-width: 480px;
+  }
   #feature .container {
     flex-direction: column;
     justify-content: center;
@@ -509,7 +524,6 @@
     height: auto;
     max-height: auto;
     margin-right: 0;
-    background: red;
   }
   #feature .container .coffee-table {
     height: 250px;
@@ -757,9 +771,6 @@
 }
 
 @media (max-width: 480px) {
-  #feature-product .container, .feature-product2 .container {
-    max-width: 400px;
-  }
   #feature-product .container .top-row1, .feature-product2 .container .top-row1 {
     flex-direction: column;
     justify-content: center;
@@ -1082,7 +1093,6 @@
   #best-seller1 {
     display: block;
     margin-top: 10px;
-    height: 1300px;
   }
   #best-seller1 .all-products {
     margin-top: 30px;
@@ -1102,9 +1112,7 @@
     font-size: 10px;
   }
   #best-seller1 .left {
-    width: 6vw;
-    height: 300vh;
-    background: #ffffff;
+    display: none;
   }
 }
 #discount-banner {
@@ -1213,9 +1221,7 @@
     padding-bottom: 20px;
   }
   #discount-banner .left {
-    width: 2vw;
-    height: 100vh;
-    background: #eeeeee;
+    display: none;
   }
   #discount-banner .discount-container {
     gap: 15px;
@@ -1356,13 +1362,8 @@
 }
 
 @media (max-width: 480px) {
-  #offer .left {
-    width: 6vw;
-    height: 75vh;
-    background: #eeeeee;
-  }
-  #offer .right {
-    width: 94vw;
+  #offer {
+    overflow-x: hidden;
   }
   #offer .right .offer-container {
     flex-direction: column;
@@ -1453,7 +1454,7 @@
   }
   #newsletter .newsletter-container .email input {
     padding: 10px 30px;
-    font-size: 12px;
+    font-size: 9px;
   }
   #newsletter .newsletter-container .email .btn {
     max-width: 120px;
@@ -1560,7 +1561,7 @@
 
 @media (max-width: 480px) {
   #blog {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
   }
   #blog .blog-container .blogs .heading h3 {
@@ -1721,6 +1722,9 @@
 }
 
 @media (max-width: 480px) {
+  #footer {
+    overflow-x: hidden;
+  }
   #footer .footer-container {
     flex-direction: column;
   }
