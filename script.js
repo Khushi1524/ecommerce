@@ -1,5 +1,5 @@
-
-
+//nav open close
+ 
 const navToggle = document.querySelector("#menu-btn");
 navToggle.addEventListener("click", () => {
   document.querySelector("#menu").classList.add("show");
@@ -10,6 +10,16 @@ navToggleClose.addEventListener("click", () => {
   document.querySelector("#menu").classList.remove("show");
 });
 
+//activecls
+
+const menuItems = document.querySelectorAll('.menus');
+
+menuItems.forEach((item) => {
+  item.addEventListener('click', function () {
+    menuItems.forEach((li) => li.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
 
 
 const productImage = [

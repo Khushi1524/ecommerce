@@ -94,6 +94,12 @@
             color: #757575;
           }
 
+          &.active {
+            a {
+              color: black;
+            }
+          }
+
           &#menu-btn2 {
             display: none;
           }
@@ -727,6 +733,11 @@
           background: #ffffff;
           color: #616161;
           border-radius: 4px;
+        }
+
+        .active{
+          background: #212121;
+          color: #ffffff;
         }
       }
 
