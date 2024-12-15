@@ -511,6 +511,7 @@
 @media (max-width: 480px) {
   #feature {
     height: auto;
+    overflow-x: hidden;
   }
   #feature .left-row {
     width: 6vw;
@@ -778,6 +779,9 @@
 }
 
 @media (max-width: 480px) {
+  #feature-product, .feature-product2 {
+    overflow-x: hidden;
+  }
   #feature-product .container .top-row1, .feature-product2 .container .top-row1 {
     flex-direction: column;
     justify-content: center;
@@ -929,6 +933,9 @@
 }
 
 @media (max-width: 480px) {
+  #best-seller {
+    overflow-x: hidden;
+  }
   #best-seller .container {
     flex-direction: column;
     gap: 0px;
@@ -1100,6 +1107,7 @@
   #best-seller1 {
     display: block;
     margin-top: 10px;
+    overflow-x: hidden;
   }
   #best-seller1 .all-products {
     margin-top: 30px;
@@ -1226,6 +1234,7 @@
 @media (max-width: 480px) {
   #discount-banner {
     padding-bottom: 20px;
+    overflow-x: hidden;
   }
   #discount-banner .left {
     display: none;
@@ -1450,6 +1459,7 @@
   #newsletter {
     max-width: 250px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   #newsletter .newsletter-container h3 {
     font-size: 25px;
@@ -1570,6 +1580,7 @@
   #blog {
     width: 400px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   #blog .blog-container .blogs .heading h3 {
     font-size: 20px;
@@ -1631,6 +1642,9 @@
 }
 
 @media (max-width: 480px) {
+  #special-offer {
+    overflow-x: hidden;
+  }
   #special-offer .specialOffer-container {
     flex-direction: column;
     gap: 50px;
@@ -1657,6 +1671,9 @@
 }
 
 @media (max-width: 480px) {
+  #brandlogo {
+    overflow-x: hidden;
+  }
   #brandlogo .brandlogo-container {
     flex-direction: column;
   }
