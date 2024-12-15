@@ -1,10 +1,14 @@
 
 
+const navToggle = document.querySelector("#menu-btn");
+navToggle.addEventListener("click", () => {
+  document.querySelector("#menu").classList.add("show");
+});
 
-
-
-
-
+const navToggleClose = document.querySelector("#menu-btn2");
+navToggleClose.addEventListener("click", () => {
+  document.querySelector("#menu").classList.remove("show");
+});
 
 
 
@@ -80,7 +84,6 @@ for (let i = 0; i < Images.length; i++) {
 const productsRow2 = document.querySelector("#productsRow2");
 const productsRow3 = document.querySelector("#productsRow3");
 
-
 for (let i = 0; i < 3; i++) {
   let newClassContent = "";
   if (i % 4 === 0) {
@@ -127,81 +130,71 @@ for (let i = 0; i < 3; i++) {
             </div>
         </div>`;
   productsRow2.innerHTML += cardStructure;
-  productsRow3.innerHTML = cardStructure + productsRow3.innerHTML
+  productsRow3.innerHTML = cardStructure + productsRow3.innerHTML;
 }
 
 //
 
+
+const bestSellerData = [
+    { src: "assets/Picture-1.png", title: "Petite Table Lamp", price: "$19.00", originalPrice: "$21.00" },
+    { src: "assets/Picture-2.png", title: "Original Outdoor Beanbag", price: "$50.00", originalPrice: "$71.00" },
+    { src: "assets/Picture-3.png", title: "Wingback Chair", price: "$191.00", originalPrice: "$221.00" },
+    { src: "assets/Picture-4.png", title: "Madra Log Holder", price: "$191.00", originalPrice: "$221.00" },
+    { src: "assets/Picture-5.png", title: "Carronade Large Suspension Lamp", price: "$19.00" },
+    { src: "assets/Picture-6.png", title: "Cushion Set 3 Pieces", price: "$91.00" },
+    { src: "assets/Picture-7.png", title: "Garden Armchair", price: "$11.00" },
+    { src: "assets/Picture-8.png", title: "2-Seater", price: "$165.00" },
+    { src: "assets/Picture-1.png", title: "Petite Table Lamp", price: "$91.00" },
+];
+
 const bestSellerRow = document.querySelector(".bestSellerRow");
 
-for (let i = 1; i <= 3; i++) {
-  let headerText = "Best Seller";
-  if (i === 2) headerText = "New Arrival";
-  else if (i === 3) headerText = "Featured";
+for (let i = 0; i < 3; i++) {
+    let headerText = "Best Seller";
+    if (i === 1) headerText = "New Arrival";
+    else if (i === 2) headerText = "Featured";
 
-  const bestSellerColumn = `
-        <div class="bestSellerColumn">
-            <div class="top-row">
-                <p>${headerText}</p>
-                  <div class="prev-next">
-            <div class="imgbx">
-              <img src="icons/Icon-Back-Arrow.png" alt="" />
-              <p id="back">Back</p>
+    let cardsHtml = "";
+    for (let j = 0; j < 3; j++) {
+        const productIndex = i * 3 + j;
+        const product = bestSellerData[productIndex];
 
-              <p>Next</p>
-              <img src="icons/Icon-Next-Arrow.png" alt="" />
-            </div>
-          </div>
-
-            </div>
-            
-            <div class="card-bx">
-                <div class="card">
-                    <div class="imgbx">
-                        <img src="assets/Picture-1.png" alt="">
-                    </div>
-                    <div class="contentbx">
-                        <h4>Petite Table Lamp</h4>
-                        <p>$19.00 $21.00</p>
-
-                        <div class="btn">
-                            <button>Add to Cart</button>
-                        </div>
-                    </div>
+        cardsHtml += `
+        <div class="card-bx">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="${product.src}" alt="${product.title}">
                 </div>
-            </div>
-
-            <div class="card-bx">
-                <div class="card">
-                    <div class="imgbx">
-                        <img src="assets/Picture-1.png" alt="">
-                    </div>
-                    <div class="contentbx">
-                        <h4>Petite Table Lamp</h4>
-                        <p>$19.00 $21.00</p>
-
-                        <div class="btn">
-                            <button>Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-bx">
-                <div class="card">
-                    <div class="imgbx">
-                        <img src="assets/Picture-1.png" alt="">
-                    </div>
-                    <div class="contentbx">
-                        <h4>Petite Table Lamp</h4>
-                        <p>$19.00 $21.00</p>
-
-                        <div class="btn">
-                            <button>Add to Cart</button>
-                        </div>
+                <div class="contentbx">
+                    <h4>${product.title}</h4>
+                    <p>
+                        <span class="current-price">${product.price}</span>
+                        ${product.originalPrice ? `<span class="original-price">${product.originalPrice}</span>` : ""}
+                    </p>
+                    <div class="btn">
+                        <button>Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>`;
-  bestSellerRow.innerHTML += bestSellerColumn;
+    }
+
+    const bestSellerColumn = `
+      <div class="bestSellerColumn">
+          <div class="top-row">
+              <p>${headerText}</p>
+              <div class="prev-next">
+                  <div class="imgbx">
+                      <img src="icons/Icon-Back-Arrow.png" alt="Back">
+                      <p id="back">Back</p>
+                      <p>Next</p>
+                      <img src="icons/Icon-Next-Arrow.png" alt="Next">
+                  </div>
+              </div>
+          </div>
+          ${cardsHtml}
+      </div>`;
+
+    bestSellerRow.innerHTML += bestSellerColumn;
 }
