@@ -600,7 +600,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: end;
 
-  .left{
+  .left {
     width: 2vw;
     height: 350px;
     background: #eeeeee;
@@ -912,7 +912,6 @@ body::-webkit-scrollbar {
 .offer {
   display: flex;
   flex-direction: row;
-  
 
   .left {
     width: 6vw;
@@ -1094,7 +1093,6 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 
     .blogs {
       display: flex;
@@ -1144,7 +1142,7 @@ body::-webkit-scrollbar {
 
         .blog-content {
           max-width: 320px;
-          padding:5px 15px;
+          padding: 5px 15px;
           line-height: 1.5;
 
           h4 {
@@ -1154,33 +1152,32 @@ body::-webkit-scrollbar {
           }
 
           p {
-            padding:5px 0px;
+            padding: 5px 0px;
             color: #616161;
             font-weight: 400;
             font-size: 12px;
           }
 
-          #blog-p{
-            color:#212121;
+          #blog-p {
+            color: #212121;
             font-size: 14px;
             font-weight: 400;
           }
         }
 
-        .blog-end{
+        .blog-end {
           display: flex;
           flex-direction: row;
           justify-content: start;
           align-items: center;
-       
 
-          .line{
+          .line {
             width: 40px;
             height: 1px;
             background: #616161;
           }
 
-          p{
+          p {
             color: #616161;
             font-size: 12px;
             font-weight: 500;
@@ -1192,42 +1189,144 @@ body::-webkit-scrollbar {
   }
 }
 
-.special-offer{
+.special-offer {
   background: #ffffff;
   padding: 100px 50px;
 
-  .specialOffer-container{
+  .specialOffer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10%;
 
-    .card{
+    .card {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 8px;
 
-      .imgbx{
+      .imgbx {
         width: 50px;
 
-        img{
+        img {
           width: 100%;
         }
       }
 
-      h4{
+      h4 {
         color: #000000;
         font-size: 18px;
         font-weight: 500;
       }
 
-      p{
+      p {
         color: #000000;
         font-size: 14px;
         font-weight: 400;
       }
+    }
+  }
+}
+
+.brandlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  padding: 100px 50px;
+
+  .brandlogo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+    .company {
+      width: 120px;
+      height: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 70vh;
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 70px;
+
+    .component-1 {
+      max-width: 500px;
+      padding: 10px 30px;
+
+      h4 {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #212121;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+    }
+
+    .component-2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 700px;
+      padding: 10px;
+
+      .services {
+        h4 {
+          color: #424242;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+
+        p {
+          color: #212121;
+          font-size: 12px;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .line{
+      height: 1px;
+      width: 80vw;
+      background-color: #CFCFCF;
+      margin: 30px;
+  }
+
+  .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+      color: #000000;
+      font-size: 12px;
+      font-weight: 400;
 
     }
   }

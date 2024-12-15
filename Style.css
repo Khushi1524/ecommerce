@@ -1005,4 +1005,91 @@ body::-webkit-scrollbar {
   color: #000000;
   font-size: 14px;
   font-weight: 400;
+}
+
+.brandlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  padding: 100px 50px;
+}
+.brandlogo .brandlogo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.brandlogo .brandlogo-container .company {
+  width: 120px;
+  height: auto;
+}
+.brandlogo .brandlogo-container .company img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 70vh;
+}
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 70px;
+}
+.footer .footer-container .component-1 {
+  max-width: 500px;
+  padding: 10px 30px;
+}
+.footer .footer-container .component-1 h4 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.footer .footer-container .component-1 p {
+  color: #212121;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer .footer-container .component-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+  padding: 10px;
+}
+.footer .footer-container .component-2 .services h4 {
+  color: #424242;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.footer .footer-container .component-2 .services p {
+  color: #212121;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.footer .line {
+  height: 1px;
+  width: 80vw;
+  background-color: #CFCFCF;
+  margin: 30px;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .copyright p {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
 }/*# sourceMappingURL=Style.css.map */
