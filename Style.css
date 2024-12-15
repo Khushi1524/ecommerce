@@ -153,15 +153,41 @@ body::-webkit-scrollbar {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-.hero-section .banner .container .content .button {
-  margin-top: 30px;
-  padding: 15px 35px;
-  background: #212121;
+.hero-section .banner .container .content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 60px 0;
 }
-.hero-section .banner .container .content .button p {
+.hero-section .banner .container .content .btn button {
+  padding: 12px 30px;
+  position: relative;
+  font-size: 12px;
+  background: #212121;
   color: #ffffff;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  border: none;
+}
+.hero-section .banner .container .content .btn button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.hero-section .banner .container .content .btn button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
 }
 .hero-section .banner .container .imgbx {
   width: 600px;
@@ -342,6 +368,7 @@ body::-webkit-scrollbar {
 .feature-product {
   background: #eeeeee;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .feature-product .container {
   max-width: 1000px;
@@ -349,8 +376,8 @@ body::-webkit-scrollbar {
 }
 .feature-product .container .top-row1 {
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: space-between;
+  align-items: center;
   margin: 30px 0;
 }
 .feature-product .container .top-row1 .menus button {
@@ -360,6 +387,25 @@ body::-webkit-scrollbar {
   color: #616161;
   border-radius: 4px;
 }
+.feature-product .container .top-row1 .prev-next .imgbx {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.feature-product .container .top-row1 .prev-next .imgbx img {
+  width: 12px;
+}
+.feature-product .container .top-row1 .prev-next .imgbx p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #616161;
+}
+.feature-product .container .top-row1 .prev-next .imgbx #back {
+  border-right: 1px solid #616161;
+  padding-right: 10px;
+}
 .feature-product .container .products {
   padding: 0;
   margin: 0;
@@ -368,6 +414,52 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 30px;
+}
+.feature-product .container .products .row .card.text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-width: 120px;
+}
+.feature-product .container .products .row .card.text-card h3 {
+  color: #333333;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+.feature-product .container .products .row .card.text-card p {
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 22px;
+}
+.feature-product .container .products .row .card.text-card button {
+  padding: 12px 30px;
+  position: relative;
+  font-size: 12px;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+.feature-product .container .products .row .card.text-card button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.feature-product .container .products .row .card.text-card button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 .feature-product .container .products .row .card .card-container .firstbx {
   position: relative;
@@ -449,7 +541,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0 60px 0;
+  padding: 40px 0 30px 0;
 }
 .feature-product .container .btn button {
   padding: 10px 20px;
@@ -514,15 +606,36 @@ body::-webkit-scrollbar {
   font-size: 14px;
   font-weight: 400;
 }
-.best-seller .container .contentbx .btn {
-  margin-top: 50px;
-}
-.best-seller .container .contentbx .btn button {
-  padding: 10px 24px;
-  font-size: 14px;
-  background-color: #212121;
+.best-seller .container .contentbx button {
+  padding: 12px 30px;
+  position: relative;
+  font-size: 12px;
+  background: #212121;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  border: none;
+  margin-top: 30px;
+}
+.best-seller .container .contentbx button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.best-seller .container .contentbx button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
 }
 .best-seller .container .imgbx {
   width: 400px;
@@ -590,18 +703,24 @@ body::-webkit-scrollbar {
   font-weight: 500;
   font-size: 14px;
 }
-.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .pre-next {
+.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .prev-next .imgbx {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
-.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .pre-next p,
-.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .pre-next i {
-  padding: 2px 10px;
+.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .prev-next .imgbx img {
+  width: 12px;
+}
+.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .prev-next .imgbx p {
   font-size: 12px;
-  color: #757575;
+  font-weight: 400;
+  color: #616161;
 }
-.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .pre-next #back {
-  border-right: 1px solid #757575;
+.best-seller1 .all-products .bestSellerRow .bestSellerColumn .top-row .prev-next .imgbx #back {
+  border-right: 1px solid #616161;
+  padding-right: 10px;
 }
 .best-seller1 .all-products .bestSellerRow .bestSellerColumn .card-bx {
   margin-top: 10px;
@@ -686,20 +805,29 @@ body::-webkit-scrollbar {
   gap: 15px;
   width: 98vw;
 }
-.discount-banner .discount-container .pre-next {
+.discount-banner .discount-container .prev-next {
+  display: flex;
+  justify-content: end;
+  margin-right: 80px;
+}
+.discount-banner .discount-container .prev-next .imgbx {
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  margin-right: 70px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
-.discount-banner .discount-container .pre-next p,
-.discount-banner .discount-container .pre-next i {
-  padding: 2px 10px;
+.discount-banner .discount-container .prev-next .imgbx img {
+  width: 12px;
+}
+.discount-banner .discount-container .prev-next .imgbx p {
   font-size: 12px;
-  color: #757575;
+  font-weight: 400;
+  color: #616161;
 }
-.discount-banner .discount-container .pre-next #back {
-  border-right: 1px solid #757575;
+.discount-banner .discount-container .prev-next .imgbx #back {
+  border-right: 1px solid #616161;
+  padding-right: 10px;
 }
 .discount-banner .discount-container .product-row {
   display: flex;
@@ -735,8 +863,32 @@ body::-webkit-scrollbar {
   font-family: "Playfair Display", sans-serif;
   margin-bottom: 15px;
 }
-.discount-banner .discount-container .product-row .discount-product .btn button {
-  padding: 10px 20px;
+.discount-banner .discount-container .product-row .discount-product button {
+  padding: 12px 30px;
+  position: relative;
+  font-size: 12px;
+}
+.discount-banner .discount-container .product-row .discount-product button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.discount-banner .discount-container .product-row .discount-product button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid;
+  border-radius: 50%;
 }
 
 .offer {
@@ -816,18 +968,38 @@ body::-webkit-scrollbar {
 .offer .right .offer-container .imgbx img {
   width: 100%;
 }
-.offer .right .offer-container .btn {
-  margin-top: 20px;
-}
-.offer .right .offer-container .btn button {
-  padding: 10px 20px;
-  color: #ffffff;
+.offer .right .offer-container button {
+  padding: 12px 30px;
+  position: relative;
+  font-size: 12px;
   background: #212121;
+  color: #ffffff;
+  border: none;
+  margin-top: 30px;
+}
+.offer .right .offer-container button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.offer .right .offer-container button::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
 }
 
-.decoration .decoration-container {
-  background: #eeeeee;
-}
 .newsletter {
   display: flex;
   justify-content: center;
@@ -1080,7 +1252,7 @@ body::-webkit-scrollbar {
 .footer .line {
   height: 1px;
   width: 80vw;
-  background-color: #CFCFCF;
+  background-color: #cfcfcf;
   margin: 30px;
 }
 .footer .copyright {
